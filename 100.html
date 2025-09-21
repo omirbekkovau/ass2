@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>My First Webpage</title>
+  <link rel="stylesheet" href="100.css">
+  <link rel="icon" type="image/png" href="https://i.pinimg.com/originals/59/46/d8/5946d8e1fdbec5afea70d2ea42c9ab87.jpg">
+  <style>   
+     body {
+      background-color: #c9d2d9; 
+    }
+
+    h1 {
+      font-family: Arial, sans-serif;
+      color: rgb(59, 4, 9);
+      font-size: 32px;
+    }
+
+    h2 {
+      font-family: "Times New Roman", serif;
+      color: rgb(47, 50, 45);
+      font-size: 150%;
+    }
+
+    p {
+      font-size: 16px;
+      color: darkblue;
+      font-size: 1rem;
+    }
+     h3 {
+      font-size: 2em;
+    }
+    
+    .highlight {
+  color: green;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+
+  border: 2px dashed blue;   
+  margin: 10px 0;            
+  padding: 10px;             
+}
+    #special {
+      color: rgb(142, 215, 39);
+      font-size: 20px;
+      font-style: italic;
+    }
+    #main-heading {
+  color: crimson;
+  font-size: 26px;
+  text-align: center;
+  font-style: italic;
+
+  border: 3px solid black;   
+  margin: 20px;             
+  padding: 15px;             
+}
+
+    .header {
+      background-color: #cce5ff;
+      padding: 20px;
+      text-align: center;
+    }   
+
+    .main-content {
+     background-color: #f2f2f2;
+     padding: 20px;
+    }
+
+    .footer {
+     background-color: #ddd;
+     padding: 10px;
+     text-align: center;
+     font-size: 14px;
+    }
+    img {
+  border: 5px solid #444;  
+  margin: 20px;             
+  padding: 5px;      
+   width: 50%;
+      max-width: 300px;
+      height: auto;    
+}
+  .static-box {
+  float: left;
+  width: 150px;
+  height: 50px;
+  background-color: lightblue;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid navy;
+  position: static;
+}
+
+.relative-box {
+  float: right;
+  width: 150px;
+  height: 50px;
+  background-color: lightgreen;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid green;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.absolute-box {
+  clear: both;
+  width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  background-color: lightcoral;
+  text-align: center;
+  line-height: 50px;
+  border: 2px solid darkred;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box {
+  width: 200px;
+  height: 150px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  float: left;
+  background: seagreen;
+}
+
+.right {
+  float: right;
+  background: darkorange;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.below {
+  margin-top: 20px;
+  background: lightgray;
+  padding: 10px;
+}
+
+  </style>  
+</head>
+<body>
+  <table border="1" width="100%" cellpadding="10">
+    <tr>
+      <td width="20%" valign="top">
+        <h3>Menu</h3>
+        <ul>
+          <li><a href="https://lms.astanait.edu.kz/mod/assign/view.php?id=3216" target="_blank">Moodle</a></li>
+          <li><a href="https://learn.astanait.edu.kz/dashboard" target="_blank">Learn</a></li>
+          <li><a href="https://duolingo.com" target="_blank">Duolingo</a></li>
+        </ul>
+      </td>
+
+      <td width="80%" valign="top">
+        <div class="header">
+        <h1 id="main-heading">Ulpan</h1>
+        <h2>Web Technologies</h2></div>
+          <div class="main-content">
+        <h3>About me</h3>
+        <p style="color:#0404b6;">I study at Astana IT University.</p>
+        <p class="highlight">My group is IT-2402</p>
+        <p id="special">I am 18</p> </div>
+
+        <h3>My Hobbies</h3>
+        <ol>
+          <li>Singing</li>
+          <li>Painting</li>
+          <li>Reading</li>
+        </ol>
+
+        <h3>My Favourite Websites</h3>
+        <ul>
+          <li>Du</li>
+          <li>Moodle</li>
+          <li>Learn</li>
+        </ul>
+
+        <h3>My Photo</h3>
+        <img src="https://get.wallhere.com/photo/rabbits-nature-1453383.jpg" alt="me" width="300" height="200">
+
+        <p><button>Click Me</button></p>
+      
+        <h3>My Class Schedule</h3>
+        <table border="1" cellpadding="5">
+          <caption>Schedule</caption>
+          <tr>
+            <th>Subject</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+          <tr>
+            <td>Web</td>
+            <td>Monday</td>
+            <td>16:00 - 18:00</td>
+          </tr>
+          <tr>
+            <td>FP</td>
+            <td>Tuesday</td>
+            <td>16:00 - 18:00</td>
+          </tr>
+          <tr>
+            <td>Geometry</td>
+            <td>Friday</td>
+            <td>14:00 - 16:00</td>
+          </tr>
+        </table>
+       <div class="footer">
+       <p>© 2025 Ulpan’s Website</p>
+       <p>My mood today: &#128522; &#128187; &#127912;</p></div>
+
+      <h3>Feedback Form</h3>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name"><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email"><br><br>
+
+          <label for="color">Favorite Color:</label><br>
+          <input type="color" id="color" name="color"><br><br>
+
+          <input type="submit" value="Submit">
+        </form>
+      </td>
+    </tr>
+  </table>
+<div class="clearfix">
+    <div class="box left">Left box</div>
+    <div class="box right">Right box</div>
+  </div>
+
+  <p>Content below floats</p>
+
+  <h3>CSS Positioning Demo</h3>
+<div class="static-box">Static</div>
+<div class="relative-box">Relative</div>
+<div class="absolute-box">Absolute </div>
+
+</body>
+</html> 
